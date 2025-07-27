@@ -20,6 +20,7 @@
     texliveBasic
     mermaid-cli
     # -- Snacks.picker
+    fd
     sqlite
     # -- Snacks.dashboard
     ascii-image-converter  # used to load image
