@@ -130,7 +130,7 @@
   # -- terminal
   {
     mode = "n";
-    key = "<c-/>";
+    key = "<C-/>";
     action = ''<cmd>lua require('snacks').terminal()<CR>'';
     options = {
       desc = "Toggle Termianl";
