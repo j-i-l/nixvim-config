@@ -4,10 +4,14 @@
         enable = true;
         autoLoad = true;
         settings = {
-            dashboard = import ./dashboard.nix;
+            dashboard = import ./dashboard;
+            lazygit = import ./lazygit.nix;
             bigfile = {
               enabled = true;
               notify = true;
+            };
+            gitbrowse = {
+              enable = true;
             };
             notifier = {
                 enabled = true;

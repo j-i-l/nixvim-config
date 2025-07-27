@@ -90,4 +90,51 @@
       silent = true;
     };
   }
+  {
+    mode = "n";
+    key = "<leader>gg";
+    action = "<cmd>lua require('snacks').lazygit()<CR>";
+    options = {
+      desc = "Lazygit";
+      silent = true;
+    };
+  }
+  {
+    mode = ["n" "v"];
+    key = "<leader>gB";
+    action = "<cmd>lua require('snacks').gitbrowse()<CR>";
+    options = {
+      desc = "Git Browse";
+      silent = true;
+    };
+  }
+  # -- notify
+  {
+    mode = "";
+    key = "<leader>nh";
+    action = "<cmd>lua require('snacks').notifier.hide()<CR>";
+    options = {
+      desc = "Dismiss all notifications";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>nH";
+    action = "<cmd>lua require('snacks').notifier.show_history()<CR>";
+    options = {
+      desc = "Notification History";
+      silent = true;
+    };
+  }
+  # -- terminal
+  {
+    mode = "n";
+    key = "<c-/>";
+    action = ''<cmd>lua require('snacks').terminal()<CR>'';
+    options = {
+      desc = "Toggle Termianl";
+      silent = true;
+    };
+  }
 ]

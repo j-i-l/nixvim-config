@@ -24,7 +24,9 @@
     # -- Snacks.dashboard
     ascii-image-converter  # used to load image
     chafa
+    # -- Snacks.lazygit
+    lazygit
   ];
-   
+
 }
 
