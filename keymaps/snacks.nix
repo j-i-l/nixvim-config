@@ -120,7 +120,7 @@
   # -- git
   {
     mode = "n";
-    key = "<leader>gg";
+    key = "<leader>gl";
     action = "<cmd>lua require('snacks').lazygit()<CR>";
     options = {
       desc = "Lazygit";
@@ -133,6 +133,70 @@
     action = "<cmd>lua require('snacks').gitbrowse()<CR>";
     options = {
       desc = "Git Browse";
+      silent = true;
+    };
+  }
+  # -- lsp
+  {
+    mode = "n";
+    key = "<leader>ld";
+    action = "<cmd>lua require('snacks').picker.lsp_definitions()<CR>";
+    options = {
+      desc = "Goto Definition";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>lc";
+    action = "<cmd>lua require('snacks').picker.lsp_declarations()<CR>";
+    options = {
+      desc = "Goto Declarations";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>lr";
+    action = "<cmd>lua require('snacks').picker.lsp_references()<CR>";
+    options = {
+      desc = "References";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>li";
+    action = "<cmd>lua require('snacks').picker.lsp_implementations()<CR>";
+    options = {
+      desc = "Goto Implementation";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>lt";
+    action = "<cmd>lua require('snacks').picker.lsp_type_definitions()<CR>";
+    options = {
+      desc = "Goto T[y]pe Definition";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>ls";
+    action = "<cmd>lua require('snacks').picker.lsp_symbols()<CR>";
+    options = {
+      desc = "LSP Symbols";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>lw";
+    action = "<cmd>lua require('snacks').picker.lsp_workspace_symbols()<CR>";
+    options = {
+      desc = "LSP Workspace Symbols";
       silent = true;
     };
   }
