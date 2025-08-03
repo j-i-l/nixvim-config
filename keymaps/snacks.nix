@@ -2,6 +2,15 @@
   # -- picker
   {
     mode = "n";
+    key = "<leader>ss";
+    action = "<cmd>lua require('snacks').picker.smart()<CR>";
+    options = {
+      desc = "Smart Find Files";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
     key = "<leader>sb";
     action = "<cmd>lua require('snacks').picker.buffers()<CR>";
     options = {
@@ -15,15 +24,6 @@
     action = "<cmd>require('snacks').picker.git_branches()<CR>";
     options = {
       desc = "Git Branches";
-      silent = true;
-    };
-  }
-  {
-    mode = "n";
-    key = "<leader>f";
-    action = "<cmd>lua require('snacks').picker.smart()<CR>";
-    options = {
-      desc = "Find Files";
       silent = true;
     };
   }
@@ -90,6 +90,34 @@
       silent = true;
     };
   }
+  {
+    mode = "n";
+    key = "<leader>sh";
+    action = "<cmd>lua require('snacks').picker.command_history()<CR>";
+    options = {
+      desc = "Command History";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>sn";
+    action = "<cmd>lua require('snacks').picker.notifications()<CR>";
+    options = {
+      desc = "Notification History";
+      silent = true;
+    };
+  }
+  {
+    mode = "n";
+    key = "<leader>se";
+    action = "<cmd>lua require('snacks').explorer()<CR>";
+    options = {
+      desc = "File Explorer";
+      silent = true;
+    };
+  }
+  # -- git
   {
     mode = "n";
     key = "<leader>gg";
