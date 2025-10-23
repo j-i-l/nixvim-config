@@ -1,7 +1,8 @@
 # Nixvim Configuration
 
-This is a Flake nixvim standalone configuration.
+![j-i-l's neovim](./introView.png)
 
+This is a Flake nixvim standalone configuration.
 
 # Usage
 
